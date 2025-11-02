@@ -1,10 +1,11 @@
 using VDA_Application.Model;
+using VDA_Application.Controller;
 
 namespace VDA_Application
 {
     public partial class InitForm : Form
     {
-        private readonly DatabaseContext _db = new DatabaseContext();
+        private readonly DataGridViewController _controller = new DataGridViewController();
         public InitForm()
         {
             InitializeComponent();
@@ -12,8 +13,7 @@ namespace VDA_Application
 
         private async void loginButton_Click(object sender, EventArgs e)
         {
-            List<Employee> employees = await _db.GetEmployees();
-            dataGridView1.DataSource = employees;
+            _controller.ShowData<Employee>(dataGridView1);
         }
     }
 }

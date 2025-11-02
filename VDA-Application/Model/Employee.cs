@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace VDA_Application.Model
 {
-    internal class Employee
+    public class Employee
     {
         public int id {  get; private set; }
         public string first_name { get; private set; }
         public string last_name { get; private set; }
-        public DateOnly birth_date { get; private set; }
-        public DateOnly hire_date { get; private set; }
-        public string address { get; private set; }
-        public string city { get; private set; }
-        public string country { get; private set; }
-        public int reports_to { get; private set; }
+        public DateOnly? birth_date { get; private set; }
+        public DateOnly? hire_date { get; private set; }
+        public string? address { get; private set; }
+        public string? city { get; private set; }
+        public string? country { get; private set; }
+        public int? reports_to { get; private set; }
 
-        public Employee(int id, string first_name, string last_name, DateOnly birth_date, DateOnly hire_date, string address, string city, string country, int reports_to)
+        public Employee(int id, string last_name, string first_name, DateOnly? birth_date, DateOnly? hire_date, string? address, string? city, string? country, int? reports_to)
         {
             this.id = id;
-            this.first_name = first_name;
             this.last_name = last_name;
+            this.first_name = first_name;
             this.birth_date = birth_date;
             this.hire_date = hire_date;
             this.address = address;

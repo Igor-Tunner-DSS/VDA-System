@@ -14,15 +14,10 @@ namespace VDA_Application.Model
         public DatabaseContext()
         {
             Env.TraversePath().Load();
-            foreach (System.Collections.DictionaryEntry e in Environment.GetEnvironmentVariables())
-            {
-                if (e.Key.ToString().StartsWith("DB_"))
-                    Console.WriteLine($"{e.Key}={e.Value}");
-            }
-            string _host = Environment.GetEnvironmentVariable("DB_HOST");
-            string _username = Environment.GetEnvironmentVariable("DB_USER");
-            string _password = Environment.GetEnvironmentVariable("DB_PASS");
-            string _database = Environment.GetEnvironmentVariable("DB_NAME");
+            string? _host = Environment.GetEnvironmentVariable("DB_HOST");
+            string? _username = Environment.GetEnvironmentVariable("DB_USER");
+            string? _password = Environment.GetEnvironmentVariable("DB_PASS");
+            string? _database = Environment.GetEnvironmentVariable("DB_NAME");
 
             string connString = $"Host={_host};Username={_username};Password={_password};Database={_database}";
             dataSource = NpgsqlDataSource.Create(connString);
@@ -44,28 +39,31 @@ namespace VDA_Application.Model
             await cmd.ExecuteNonQueryAsync();
         }
 
+
         public async Task<List<Employee>> GetEmployees()
         {
             List<Employee> employees = new List<Employee>();
             await using var cmd = dataSource.CreateCommand("SELECT employee_id, last_name, first_name, birth_date, hire_date, address, city, country, reports_to FROM employees");
-            await using var reader = await cmd.ExecuteReaderAsync();
+            await using NpgsqlDataReader reader = await cmd.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
                 Employee employee = new Employee
                 (
-                    reader.GetInt16(0),
-                    reader.GetString(1),
-                    reader.GetString(2),
-                    DateOnly.FromDateTime(reader.GetDateTime(3)),
-                    DateOnly.FromDateTime(reader.GetDateTime(4)),
-                    reader.GetString(5),
-                    reader.GetString(6),
-                    reader.GetString(7),
-                    reader.GetInt16(8)
+                    id: reader.GetInt16(0),
+                    last_name: reader.GetString(1),
+                    first_name: reader.GetString(2),
+                    birth_date: Extensions.FromDateTimeSafe(reader.GetValueSafe<DateTime>(3)),
+                    hire_date: Extensions.FromDateTimeSafe(reader.GetValueSafe<DateTime>(4)),
+                    address: reader.GetValueSafeRef<string>(5),
+                    city: reader.GetValueSafeRef<string>(6),
+                    country: reader.GetValueSafeRef<string>(7),
+                    reports_to: reader.GetValueSafe<int>(8)
                 );
                 employees.Add(employee);
             }
             return employees;
         }
+
+        
     }
 }
