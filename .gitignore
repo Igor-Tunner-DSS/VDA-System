@@ -1,0 +1,45 @@
+# ========== BUILD OUTPUTS ==========
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# ========== VISUAL STUDIO ==========
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+# ========== DEPENDENCIES ==========
+packages/
+*.nupkg
+*.snupkg
+
+# ========== ENVIRONMENT / CONFIG FILES ==========
+# Never commit environment or credential files
+.env
+*.secret.json
+appsettings.Development.json
+secrets.json
+
+# ========== SYSTEM FILES ==========
+*.tmp
+*.log
+*.bak
+*.db
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========== IDE SPECIFIC ==========
+# JetBrains Rider / ReSharper
+.idea/
+*.DotSettings.user
+
+# ========== BACKUP / TEMP ==========
+*.swp
+*.orig
+*.cache
+*.pid

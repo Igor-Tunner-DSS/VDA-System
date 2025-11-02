@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\195762024\\vda\\VDA-System\\VDA-Application\\",
+  "WorkspaceRootPath": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\195762024\\vda\\vda-system\\vda-application\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\model\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:model\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\view\\initform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:view\\initform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\.env.template||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:.env.template||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,39 +42,118 @@
       "DocumentGroups": [
         {
           "DockedWidth": 259,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InitForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs",
+              "RelativeDocumentMoniker": "View\\InitForm.cs",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs [Design]",
+              "RelativeToolTip": "View\\InitForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T00:14:27.838Z",
+              "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InitForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.Designer.cs",
+              "RelativeDocumentMoniker": "View\\InitForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.Designer.cs",
+              "RelativeToolTip": "View\\InitForm.Designer.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwFYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T00:13:26.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".env.template",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\.env.template",
+              "RelativeDocumentMoniker": ".env.template",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\.env.template",
+              "RelativeToolTip": ".env.template",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-01T23:51:59.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InitForm.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs",
+              "RelativeDocumentMoniker": "View\\InitForm.cs",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs",
+              "RelativeToolTip": "View\\InitForm.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T21:17:56.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\Employee.cs",
+              "RelativeDocumentMoniker": "Model\\Employee.cs",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\Employee.cs",
+              "RelativeToolTip": "Model\\Employee.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T22:51:39.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-01T21:25:26.54Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\195762024\\vda\\VDA-System\\VDA-Application\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\195762024\\vda\\VDA-System\\VDA-Application\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "Model\\DatabaseContext.cs",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\DatabaseContext.cs*",
+              "RelativeToolTip": "Model\\DatabaseContext.cs*",
+              "ViewState": "AgIAACYAAAAAAAAAAAAcwDEAAACuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T14:24:40.831Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-01T21:17:04.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T14:25:14.321Z",
+              "EditorCaption": ""
             }
           ]
         }
