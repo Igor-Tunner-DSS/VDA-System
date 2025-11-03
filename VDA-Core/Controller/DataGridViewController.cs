@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VDA_Application.Model;
+using VDA_Core.Model;
+using VDA_Core.Model.Entities;
 
-namespace VDA_Application.Controller
+namespace VDA_Core.Controller
 {
     public class DataGridViewController
     {
-        private readonly DatabaseContext _db = new DatabaseContext();
-        public DataGridViewController() { }
+        private static readonly DatabaseContext _db = new DatabaseContext();
 
-        public async void ShowData<T>(DataGridView dataGridView)
+        public static async void ShowData<T>(DataGridView dataGridView)
         {
             if (typeof(T) == typeof(Employee))
             {

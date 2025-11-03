@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VDA_Application.Model
+namespace VDA_Core.Model.Entities
 {
     public class Employee
     {
-        public int id {  get; private set; }
+        public int id { get; private set; }
         public string first_name { get; private set; }
         public string last_name { get; private set; }
         public DateOnly? birth_date { get; private set; }

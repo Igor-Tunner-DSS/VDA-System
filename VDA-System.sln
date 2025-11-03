@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VDA-Application", "VDA-Application\VDA-Application.csproj", "{D59511CE-9237-4568-B767-2DFE59FE04B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VDA-Core", "VDA-Core\VDA-Core.csproj", "{17589A9E-4ABF-442E-8898-A9BFE1E5943C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIADM", "CLIADM\CLIADM.csproj", "{A3E8BE6C-510F-454D-8789-7B285B013773}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D59511CE-9237-4568-B767-2DFE59FE04B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59511CE-9237-4568-B767-2DFE59FE04B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59511CE-9237-4568-B767-2DFE59FE04B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59511CE-9237-4568-B767-2DFE59FE04B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17589A9E-4ABF-442E-8898-A9BFE1E5943C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17589A9E-4ABF-442E-8898-A9BFE1E5943C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17589A9E-4ABF-442E-8898-A9BFE1E5943C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17589A9E-4ABF-442E-8898-A9BFE1E5943C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E8BE6C-510F-454D-8789-7B285B013773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E8BE6C-510F-454D-8789-7B285B013773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E8BE6C-510F-454D-8789-7B285B013773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E8BE6C-510F-454D-8789-7B285B013773}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

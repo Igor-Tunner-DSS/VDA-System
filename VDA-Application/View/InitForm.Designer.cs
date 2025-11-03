@@ -28,59 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            emailBox = new TextBox();
+            loginBox = new TextBox();
             passwordBox = new TextBox();
             panel1 = new Panel();
+            button1 = new Button();
             loginButton = new Button();
             idLabel = new Label();
             idBox = new TextBox();
             passwordLabel = new Label();
             emailLabel = new Label();
-            dataGridView1 = new DataGridView();
             panel2 = new Panel();
+            panel3 = new Panel();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // emailBox
+            // loginBox
             // 
-            emailBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            emailBox.Location = new Point(0, 92);
-            emailBox.Name = "emailBox";
-            emailBox.PlaceholderText = "name@example.com";
-            emailBox.Size = new Size(403, 27);
-            emailBox.TabIndex = 0;
+            loginBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            loginBox.Location = new Point(0, 69);
+            loginBox.Margin = new Padding(3, 2, 3, 2);
+            loginBox.Name = "loginBox";
+            loginBox.PlaceholderText = "name@example.com";
+            loginBox.Size = new Size(353, 23);
+            loginBox.TabIndex = 0;
             // 
             // passwordBox
             // 
             passwordBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            passwordBox.Location = new Point(0, 170);
+            passwordBox.Location = new Point(0, 128);
+            passwordBox.Margin = new Padding(3, 2, 3, 2);
             passwordBox.Name = "passwordBox";
+            passwordBox.PasswordChar = '*';
             passwordBox.PlaceholderText = "Your password";
-            passwordBox.Size = new Size(403, 27);
+            passwordBox.Size = new Size(353, 23);
             passwordBox.TabIndex = 1;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(loginButton);
             panel1.Controls.Add(idLabel);
             panel1.Controls.Add(idBox);
             panel1.Controls.Add(passwordLabel);
-            panel1.Controls.Add(emailBox);
+            panel1.Controls.Add(loginBox);
             panel1.Controls.Add(passwordBox);
             panel1.Controls.Add(emailLabel);
-            panel1.Location = new Point(745, 88);
+            panel1.Location = new Point(652, 66);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(20);
-            panel1.Size = new Size(426, 384);
+            panel1.Padding = new Padding(18, 15, 18, 15);
+            panel1.Size = new Size(373, 288);
             panel1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(182, 260);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(82, 24);
+            button1.TabIndex = 6;
+            button1.Text = "Enter";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // loginButton
             // 
-            loginButton.Location = new Point(309, 350);
+            loginButton.Location = new Point(270, 260);
+            loginButton.Margin = new Padding(3, 2, 3, 2);
             loginButton.Name = "loginButton";
-            loginButton.Size = new Size(94, 29);
+            loginButton.Size = new Size(82, 24);
             loginButton.TabIndex = 5;
             loginButton.Text = "Login";
             loginButton.UseVisualStyleBackColor = true;
@@ -90,28 +107,29 @@
             // 
             idLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             idLabel.AutoSize = true;
-            idLabel.Location = new Point(0, 225);
+            idLabel.Location = new Point(0, 169);
             idLabel.Name = "idLabel";
-            idLabel.Size = new Size(94, 20);
+            idLabel.Size = new Size(73, 15);
             idLabel.TabIndex = 4;
             idLabel.Text = "Employee ID";
             // 
             // idBox
             // 
             idBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            idBox.Location = new Point(0, 250);
+            idBox.Location = new Point(0, 188);
+            idBox.Margin = new Padding(3, 2, 3, 2);
             idBox.Name = "idBox";
             idBox.PlaceholderText = "Your company provided identification number";
-            idBox.Size = new Size(403, 27);
+            idBox.Size = new Size(353, 23);
             idBox.TabIndex = 3;
             // 
             // passwordLabel
             // 
             passwordLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new Point(0, 145);
+            passwordLabel.Location = new Point(0, 109);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new Size(70, 20);
+            passwordLabel.Size = new Size(57, 15);
             passwordLabel.TabIndex = 2;
             passwordLabel.Text = "Password";
             // 
@@ -119,53 +137,49 @@
             // 
             emailLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             emailLabel.AutoSize = true;
-            emailLabel.Location = new Point(0, 67);
+            emailLabel.Location = new Point(0, 50);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new Size(46, 20);
+            emailLabel.Size = new Size(37, 15);
             emailLabel.TabIndex = 0;
             emailLabel.Text = "Login";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.AllowUserToOrderColumns = true;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(709, 637);
-            dataGridView1.TabIndex = 3;
             // 
             // panel2
             // 
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(709, 0);
+            panel2.Location = new Point(620, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(497, 637);
+            panel2.Size = new Size(435, 478);
             panel2.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.ControlDark;
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(620, 478);
+            panel3.TabIndex = 5;
             // 
             // InitForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1206, 637);
+            ClientSize = new Size(1055, 478);
+            Controls.Add(panel3);
             Controls.Add(panel1);
-            Controls.Add(dataGridView1);
             Controls.Add(panel2);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "InitForm";
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private TextBox emailBox;
+        private TextBox loginBox;
         private TextBox passwordBox;
         private Panel panel1;
         private Label idLabel;
@@ -173,7 +187,8 @@
         private Label passwordLabel;
         private Label emailLabel;
         private Button loginButton;
-        private DataGridView dataGridView1;
         private Panel panel2;
+        private Panel panel3;
+        private Button button1;
     }
 }

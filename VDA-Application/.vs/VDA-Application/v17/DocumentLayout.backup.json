@@ -1,42 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\",
+  "WorkspaceRootPath": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\controller\\datagridviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:controller\\datagridviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\vda-application\\cliadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:cliadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AC198DF-D5A0-441F-AEE8-D2AAF0288014}|..\\CLIADM\\CLIADM.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\cliadm\\cliadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\model\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5AC198DF-D5A0-441F-AEE8-D2AAF0288014}|..\\CLIADM\\CLIADM.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\cliadm\\cliadm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\vda-application\\vda-application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:vda-application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\vda-application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\vda-application\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\vda-application\\model\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:model\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\vda-application\\model\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:model\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:view\\initform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\model\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:model\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\view\\initform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:view\\initform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\.env.template||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:.env.template||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor\\documents\\projects\\vda\\vda-system\\vda-application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|c:\\users\\igor tunner\\documents\\projects\\vda-system\\vda-application\\model\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5FE038-B209-4039-8B86-849806AF10FA}|VDA-Application.csproj|solutionrelative:model\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,129 +48,160 @@
       "DocumentGroups": [
         {
           "DockedWidth": 259,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CLIADM",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\CLIADM\\CLIADM.csproj",
+              "RelativeDocumentMoniker": "..\\CLIADM\\CLIADM.csproj",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\CLIADM\\CLIADM.csproj",
+              "RelativeToolTip": "..\\CLIADM\\CLIADM.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-02T21:32:01.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CLIADM.cs",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\CLIADM\\CLIADM.cs",
+              "RelativeDocumentMoniker": "..\\CLIADM\\CLIADM.cs",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\CLIADM\\CLIADM.cs",
+              "RelativeToolTip": "..\\CLIADM\\CLIADM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T21:28:55.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataGridViewController.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Controller\\DataGridViewController.cs",
-              "RelativeDocumentMoniker": "Controller\\DataGridViewController.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Controller\\DataGridViewController.cs*",
-              "RelativeToolTip": "Controller\\DataGridViewController.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:09:31.88Z",
+              "DocumentIndex": 3,
+              "Title": "VDA-Application",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\VDA-Application.csproj",
+              "RelativeDocumentMoniker": "VDA-Application.csproj",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\VDA-Application.csproj",
+              "RelativeToolTip": "VDA-Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-02T21:25:10.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T21:20:04.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Controller\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controller\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Controller\\AuthController.cs",
+              "RelativeToolTip": "Controller\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T21:14:42.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Model\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "Model\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Model\\Entities\\AppUser.cs",
+              "RelativeToolTip": "Model\\Entities\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:30:42.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CLIADM.cs",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\CLIADM.cs",
+              "RelativeDocumentMoniker": "CLIADM.cs",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\CLIADM.cs",
+              "RelativeToolTip": "CLIADM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:21:56.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Model\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Model\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Model\\PasswordHasher.cs",
+              "RelativeToolTip": "Model\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T20:07:27.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\DatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Model\\DatabaseContext.cs",
               "RelativeDocumentMoniker": "Model\\DatabaseContext.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\DatabaseContext.cs",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\Model\\DatabaseContext.cs",
               "RelativeToolTip": "Model\\DatabaseContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-01T21:17:04.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\Employee.cs",
-              "RelativeDocumentMoniker": "Model\\Employee.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\Employee.cs",
-              "RelativeToolTip": "Model\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T22:51:39.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InitForm.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs",
+              "DocumentIndex": 8,
+              "Title": "InitForm.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\View\\InitForm.cs",
               "RelativeDocumentMoniker": "View\\InitForm.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs",
-              "RelativeToolTip": "View\\InitForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T21:17:56.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": ".env.template",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\.env.template",
-              "RelativeDocumentMoniker": ".env.template",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\.env.template",
-              "RelativeToolTip": ".env.template",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-01T23:51:59.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InitForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs",
-              "RelativeDocumentMoniker": "View\\InitForm.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.cs [Design]",
-              "RelativeToolTip": "View\\InitForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Igor Tunner\\Documents\\Projects\\VDA-System\\VDA-Application\\View\\InitForm.cs [Projeto]",
+              "RelativeToolTip": "View\\InitForm.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T00:14:27.838Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\Extensions.cs",
-              "RelativeDocumentMoniker": "Model\\Extensions.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Model\\Extensions.cs",
-              "RelativeToolTip": "Model\\Extensions.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T15:44:08.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InitForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.Designer.cs",
-              "RelativeDocumentMoniker": "View\\InitForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\View\\InitForm.Designer.cs",
-              "RelativeToolTip": "View\\InitForm.Designer.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAqwFYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T00:13:26.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Igor\\Documents\\Projects\\VDA\\VDA-System\\VDA-Application\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T14:25:14.321Z"
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

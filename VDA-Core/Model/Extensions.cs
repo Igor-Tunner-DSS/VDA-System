@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VDA_Application.Model
+namespace VDA_Core.Model
 {
     public static class Extensions
     {

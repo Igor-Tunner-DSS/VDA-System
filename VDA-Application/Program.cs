@@ -1,3 +1,6 @@
+using System.Windows.Forms;
+using VDA_Core.Controller;
+
 namespace VDA_Application
 {
     internal static class Program
@@ -11,7 +14,13 @@ namespace VDA_Application
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new InitForm());
+            InitForm form = new InitForm();
+            form.MaximizeBox = true;
+            form.MinimizeBox = true;
+            form.FormBorderStyle = FormBorderStyle.FixedSingle;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            Application.Run(form);
+
         }
     }
 }
