@@ -18,8 +18,8 @@ namespace VDA_Core.Model
         public DatabaseContext()
         {
             Env.TraversePath().Load();
-            string? _host = Environment.GetEnvironmentVariable("DB_HOST");
-            string? _username = Environment.GetEnvironmentVariable("DB_USER");
+            string? _host = Environment.GetEnvironmentVariable("DB_HOST_POOLER");
+            string? _username = Environment.GetEnvironmentVariable("DB_USER_POOLER");
             string? _password = Environment.GetEnvironmentVariable("DB_PASS");
             string? _database = Environment.GetEnvironmentVariable("DB_NAME");
 
@@ -259,7 +259,7 @@ namespace VDA_Core.Model
             SELECT table_name
             FROM information_schema.tables
             WHERE table_schema = @schemaName
-            AND table_type = 'BASE TABLE';");
+              AND table_type = 'BASE TABLE';");
             cmd.Parameters.AddWithValue("@schemaname", schemaName);
             await using NpgsqlDataReader reader = await cmd.ExecuteReaderAsync();
             while (await reader.ReadAsync())

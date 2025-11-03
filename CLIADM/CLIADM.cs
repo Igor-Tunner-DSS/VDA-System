@@ -33,50 +33,67 @@ namespace CLIADM
         // --- Main menu ---
         static void ShowMainMenu()
         {
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("=======================================");
-                Console.WriteLine("      Welcome to the User Manager      ");
-                Console.WriteLine("=======================================");
-                Console.WriteLine("1. Add User");
-                Console.WriteLine("2. Delete User");
-                Console.WriteLine("3. List Users");
-                Console.WriteLine("4. List Employees");
-                Console.WriteLine("5. List Other Tables");
-                Console.WriteLine("6. Open application");
-                Console.WriteLine("0. Exit");
-                Console.Write("Select an option: ");
+            Console.Clear();
 
-                string choice = Console.ReadLine();
-                switch (choice)
-                {
-                    case "1":
-                        AddUser();
-                        break;
-                    case "2":
-                        RemoveUser();
-                        break;
-                    case "3":
-                        ListUsers();
-                        break;
-                    case "4":
-                        ListEmployees();
-                        break;
-                    case "5":
-                        ListTables();
-                        break;
-                    case "6":
-                        OpenApplication();
-                        break;
-                    case "0":
-                        Console.WriteLine("Goodbye!");
-                        return;
-                    default:
-                        Console.WriteLine("Invalid option. Press Enter to try again.");
-                        Console.ReadLine();
-                        break;
-                }
+            // Fancy header
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("╔══════════════════════════════════════════════╗");
+            Console.WriteLine("║              USER MANAGEMENT MENU            ║");
+            Console.WriteLine("╚══════════════════════════════════════════════╝");
+            Console.ResetColor();
+
+            // Menu options
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(" [1]  ➜  Add User");
+            Console.WriteLine(" [2]  ➜  Delete User");
+            Console.WriteLine(" [3]  ➜  List Users");
+            Console.WriteLine(" [4]  ➜  List Employees");
+            Console.WriteLine(" [5]  ➜  List Other Tables");
+            Console.WriteLine(" [6]  ➜  Open Application");
+            Console.WriteLine(" [0]  ➜  Exit");
+            Console.ResetColor();
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("Select an option: ");
+            Console.ResetColor();
+
+            string choice = Console.ReadLine()?.Trim();
+
+            Console.Clear();
+
+            switch (choice)
+            {
+                case "1":
+                    AddUser();
+                    break;
+                case "2":
+                    RemoveUser();
+                    break;
+                case "3":
+                    ListUsers();
+                    break;
+                case "4":
+                    ListEmployees();
+                    break;
+                case "5":
+                    ListTables();
+                    break;
+                case "6":
+                    OpenApplication();
+                    break;
+                case "0":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("\n👋 Goodbye! Thanks for using the User Manager.");
+                    Console.ResetColor();
+                    Thread.Sleep(1000);
+                    return;
+                default:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("⚠️  Invalid option. Press Enter to try again.");
+                    Console.ResetColor();
+                    Console.ReadLine();
+                    break;
             }
         }
 

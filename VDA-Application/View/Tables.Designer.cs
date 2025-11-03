@@ -60,13 +60,13 @@ namespace VDA_Application.View
             contentPanel = new Panel();
             tabControl1 = new TabControl();
             EmployeesTab = new TabPage();
+            dataGridView1 = new DataGridView();
             CustomersTab = new TabPage();
             ProductsTab = new TabPage();
             PurchasesTab = new TabPage();
             CategoriesTab = new TabPage();
             PurchaseItensTab = new TabPage();
             UsersTab = new TabPage();
-            dataGridView1 = new DataGridView();
             sidebarPanel.SuspendLayout();
             logoutPanel.SuspendLayout();
             userPanel.SuspendLayout();
@@ -142,7 +142,7 @@ namespace VDA_Application.View
             // 
             userNameLabel.AutoEllipsis = true;
             userNameLabel.BackColor = Color.Transparent;
-            userNameLabel.Font = new Font("UD Digi Kyokasho NK", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
+            userNameLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             userNameLabel.ForeColor = Color.WhiteSmoke;
             userNameLabel.Location = new Point(3, 136);
             userNameLabel.Name = "userNameLabel";
@@ -195,6 +195,7 @@ namespace VDA_Application.View
             // 
             // tabControl1
             // 
+            tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.Controls.Add(EmployeesTab);
             tabControl1.Controls.Add(CustomersTab);
             tabControl1.Controls.Add(ProductsTab);
@@ -203,82 +204,29 @@ namespace VDA_Application.View
             tabControl1.Controls.Add(PurchaseItensTab);
             tabControl1.Controls.Add(UsersTab);
             tabControl1.Dock = DockStyle.Fill;
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            tabControl1.HotTrack = true;
             tabControl1.Location = new Point(10, 10);
+            tabControl1.Margin = new Padding(0);
             tabControl1.Name = "tabControl1";
+            tabControl1.Padding = new Point(0, 0);
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(838, 535);
+            tabControl1.SizeMode = TabSizeMode.Fixed;
             tabControl1.TabIndex = 0;
+            tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             // 
             // EmployeesTab
             // 
+            EmployeesTab.BackColor = Color.FromArgb(30, 30, 40);
             EmployeesTab.Controls.Add(dataGridView1);
-            EmployeesTab.Location = new Point(4, 24);
+            EmployeesTab.ForeColor = SystemColors.ActiveCaption;
+            EmployeesTab.Location = new Point(4, 27);
             EmployeesTab.Name = "EmployeesTab";
-            EmployeesTab.Padding = new Padding(3);
-            EmployeesTab.Size = new Size(830, 507);
+            EmployeesTab.Size = new Size(830, 504);
             EmployeesTab.TabIndex = 0;
             EmployeesTab.Text = "Employees";
-            EmployeesTab.UseVisualStyleBackColor = true;
-            // 
-            // CustomersTab
-            // 
-            CustomersTab.Location = new Point(4, 24);
-            CustomersTab.Name = "CustomersTab";
-            CustomersTab.Padding = new Padding(3);
-            CustomersTab.Size = new Size(830, 507);
-            CustomersTab.TabIndex = 1;
-            CustomersTab.Text = "Customers";
-            CustomersTab.UseVisualStyleBackColor = true;
-            // 
-            // ProductsTab
-            // 
-            ProductsTab.Location = new Point(4, 24);
-            ProductsTab.Name = "ProductsTab";
-            ProductsTab.Padding = new Padding(3);
-            ProductsTab.Size = new Size(830, 507);
-            ProductsTab.TabIndex = 2;
-            ProductsTab.Text = "Products";
-            ProductsTab.UseVisualStyleBackColor = true;
-            // 
-            // PurchasesTab
-            // 
-            PurchasesTab.Location = new Point(4, 24);
-            PurchasesTab.Name = "PurchasesTab";
-            PurchasesTab.Padding = new Padding(3);
-            PurchasesTab.Size = new Size(830, 507);
-            PurchasesTab.TabIndex = 3;
-            PurchasesTab.Text = "Purchases";
-            PurchasesTab.UseVisualStyleBackColor = true;
-            // 
-            // CategoriesTab
-            // 
-            CategoriesTab.Location = new Point(4, 24);
-            CategoriesTab.Name = "CategoriesTab";
-            CategoriesTab.Padding = new Padding(3);
-            CategoriesTab.Size = new Size(830, 507);
-            CategoriesTab.TabIndex = 4;
-            CategoriesTab.Text = "Categories";
-            CategoriesTab.UseVisualStyleBackColor = true;
-            // 
-            // PurchaseItensTab
-            // 
-            PurchaseItensTab.Location = new Point(4, 24);
-            PurchaseItensTab.Name = "PurchaseItensTab";
-            PurchaseItensTab.Padding = new Padding(3);
-            PurchaseItensTab.Size = new Size(830, 507);
-            PurchaseItensTab.TabIndex = 5;
-            PurchaseItensTab.Text = "Purchase Itens";
-            PurchaseItensTab.UseVisualStyleBackColor = true;
-            // 
-            // UsersTab
-            // 
-            UsersTab.Location = new Point(4, 24);
-            UsersTab.Name = "UsersTab";
-            UsersTab.Padding = new Padding(3);
-            UsersTab.Size = new Size(830, 507);
-            UsersTab.TabIndex = 6;
-            UsersTab.Text = "Users";
-            UsersTab.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -287,11 +235,65 @@ namespace VDA_Application.View
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 3);
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(824, 501);
+            dataGridView1.Size = new Size(830, 504);
             dataGridView1.TabIndex = 0;
+            // 
+            // CustomersTab
+            // 
+            CustomersTab.Location = new Point(4, 27);
+            CustomersTab.Name = "CustomersTab";
+            CustomersTab.Size = new Size(830, 504);
+            CustomersTab.TabIndex = 1;
+            CustomersTab.Text = "Customers";
+            CustomersTab.UseVisualStyleBackColor = true;
+            // 
+            // ProductsTab
+            // 
+            ProductsTab.Location = new Point(4, 27);
+            ProductsTab.Name = "ProductsTab";
+            ProductsTab.Size = new Size(830, 504);
+            ProductsTab.TabIndex = 2;
+            ProductsTab.Text = "Products";
+            ProductsTab.UseVisualStyleBackColor = true;
+            // 
+            // PurchasesTab
+            // 
+            PurchasesTab.Location = new Point(4, 27);
+            PurchasesTab.Name = "PurchasesTab";
+            PurchasesTab.Size = new Size(830, 504);
+            PurchasesTab.TabIndex = 3;
+            PurchasesTab.Text = "Purchases";
+            PurchasesTab.UseVisualStyleBackColor = true;
+            // 
+            // CategoriesTab
+            // 
+            CategoriesTab.Location = new Point(4, 27);
+            CategoriesTab.Name = "CategoriesTab";
+            CategoriesTab.Size = new Size(830, 504);
+            CategoriesTab.TabIndex = 4;
+            CategoriesTab.Text = "Categories";
+            CategoriesTab.UseVisualStyleBackColor = true;
+            // 
+            // PurchaseItensTab
+            // 
+            PurchaseItensTab.Location = new Point(4, 27);
+            PurchaseItensTab.Name = "PurchaseItensTab";
+            PurchaseItensTab.Size = new Size(830, 504);
+            PurchaseItensTab.TabIndex = 5;
+            PurchaseItensTab.Text = "Purchase Itens";
+            PurchaseItensTab.UseVisualStyleBackColor = true;
+            // 
+            // UsersTab
+            // 
+            UsersTab.Location = new Point(4, 27);
+            UsersTab.Name = "UsersTab";
+            UsersTab.Size = new Size(830, 504);
+            UsersTab.TabIndex = 6;
+            UsersTab.Text = "Users";
+            UsersTab.UseVisualStyleBackColor = true;
             // 
             // Tables
             // 

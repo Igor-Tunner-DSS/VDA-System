@@ -18,23 +18,82 @@ namespace VDA_Application.View
         Employee currentEmployee = AuthController.currentSession.currentEmployee;
         DatabaseContext _db = new DatabaseContext();
 
-        private readonly List<Employee> _employees = new ();
-        private readonly List<Customer> _customers = new();
-        private readonly List<Product> _products = new();
-        private readonly List<Category> _categories = new();
-        private readonly List<Purchase> _purchases = new();
-        private readonly List<PurchaseItem> _purchaseItems = new();
-        private readonly List<AppUser> _users = new();
-
         public Tables()
         {
-            InitializeValues();
             InitializeComponent();
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl1.DrawItem += new DrawItemEventHandler(tabControl1_DrawItem);
+            EstilizarDataGridView();
             dataGridView1.DataSource = AuthController.tableValues.employees;
+
         }
 
-        private async void InitializeValues()
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
         {
+            Graphics g = e.Graphics;
+            TabPage tabPage = tabControl1.TabPages[e.Index];
+            Rectangle tabRect = tabControl1.GetTabRect(e.Index);
+            Color pretoPrincipal = Color.FromArgb(15, 15, 20);
+            Color cinzaEscuro = Color.FromArgb(30, 30, 40);
+
+
+            // Customize background color
+            if (e.State == DrawItemState.Selected)
+            {
+                g.FillRectangle(Brushes.MediumPurple, tabRect); // Selected tab color
+            }
+            else
+            {
+                g.FillRectangle(Brushes.LightGray, tabRect); // Unselected tab color
+            }
+
+            // Customize text
+            using (StringFormat sf = new StringFormat())
+            {
+                sf.Alignment = StringAlignment.Center;
+                sf.LineAlignment = StringAlignment.Center;
+                g.DrawString(tabPage.Text, e.Font, Brushes.White, tabRect, sf);
+            }
+
+            // Draw border (optional)
+            g.DrawRectangle(Pens.Black, tabRect);
+        }
+
+        private void EstilizarDataGridView()
+        {
+            Color azulPrincipal = Color.FromArgb(0, 74, 173);
+            Color vermelhoPrincipal = Color.FromArgb(220, 20, 60);
+            Color pretoPrincipal = Color.FromArgb(15, 15, 20);
+            Color cinzaEscuro = Color.FromArgb(30, 30, 40);
+
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.BackgroundColor = cinzaEscuro;
+            dataGridView1.GridColor = Color.FromArgb(60, 60, 70);
+
+            // 🎨 ESTILO DAS CÉLULAS
+            dataGridView1.DefaultCellStyle.BackColor = cinzaEscuro;
+            dataGridView1.DefaultCellStyle.ForeColor = Color.FromArgb(220, 220, 220);
+            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+            dataGridView1.DefaultCellStyle.SelectionBackColor = azulPrincipal;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
+            dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.DefaultCellStyle.Padding = new Padding(8);
+
+            // 🎨 ESTILO DAS CÉLULAS ALTERNADAS
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(40, 40, 50);
+            dataGridView1.AlternatingRowsDefaultCellStyle.ForeColor = Color.FromArgb(220, 220, 220);
+
+            // 🏆 ESTILO DO CABEÇALHO
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = pretoPrincipal;
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = vermelhoPrincipal;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowTemplate.Height = 45;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void Tables_Load(object sender, EventArgs e)
@@ -116,6 +175,51 @@ namespace VDA_Application.View
                 AuthController.currentSession = new();
                 FormController.CreateForm(new InitForm());
                 this.Hide();
+            }
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedTab == null) return;
+            switch (tabControl1.SelectedTab.Name)
+            {
+                case "EmployeesTab":
+                    dataGridView1.DataSource = AuthController.tableValues.employees;
+                    EmployeesTab.Controls.Clear();
+                    EmployeesTab.Controls.Add(dataGridView1);
+                    break;
+                case "CustomersTab":
+                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    CustomersTab.Controls.Clear();
+                    CustomersTab.Controls.Add(dataGridView1);
+                    break;
+                case "CategoriesTab":
+                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    CategoriesTab.Controls.Clear();
+                    CategoriesTab.Controls.Add(dataGridView1);
+                    break;
+                case "ProductsTab":
+                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    ProductsTab.Controls.Clear();
+                    ProductsTab.Controls.Add(dataGridView1);
+                    break;
+                case "PurchasesTab":
+                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    PurchasesTab.Controls.Clear();
+                    PurchasesTab.Controls.Add(dataGridView1);
+                    break;
+                case "PurchaseItensTab":
+                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    PurchaseItensTab.Controls.Clear();
+                    PurchaseItensTab.Controls.Add(dataGridView1);
+                    break;
+                case "UsersTab":
+                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    UsersTab.Controls.Clear();
+                    UsersTab.Controls.Add(dataGridView1);
+                    break;
+                default:
+                    break;
             }
         }
     }
