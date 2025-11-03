@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitForm));
             loginBox = new TextBox();
             passwordBox = new TextBox();
             panel1 = new Panel();
-            button1 = new Button();
             loginButton = new Button();
             idLabel = new Label();
             idBox = new TextBox();
@@ -45,28 +45,28 @@
             // loginBox
             // 
             loginBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            loginBox.Location = new Point(0, 69);
-            loginBox.Margin = new Padding(3, 2, 3, 2);
+            loginBox.Location = new Point(0, 113);
+            loginBox.Margin = new Padding(4, 3, 4, 3);
             loginBox.Name = "loginBox";
             loginBox.PlaceholderText = "name@example.com";
-            loginBox.Size = new Size(353, 23);
+            loginBox.Size = new Size(499, 31);
             loginBox.TabIndex = 0;
             // 
             // passwordBox
             // 
             passwordBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            passwordBox.Location = new Point(0, 128);
-            passwordBox.Margin = new Padding(3, 2, 3, 2);
+            passwordBox.Location = new Point(0, 211);
+            passwordBox.Margin = new Padding(4, 3, 4, 3);
             passwordBox.Name = "passwordBox";
             passwordBox.PasswordChar = '*';
             passwordBox.PlaceholderText = "Your password";
-            passwordBox.Size = new Size(353, 23);
+            passwordBox.Size = new Size(499, 31);
             passwordBox.TabIndex = 1;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel1.Controls.Add(button1);
+            panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(loginButton);
             panel1.Controls.Add(idLabel);
             panel1.Controls.Add(idBox);
@@ -74,30 +74,19 @@
             panel1.Controls.Add(loginBox);
             panel1.Controls.Add(passwordBox);
             panel1.Controls.Add(emailLabel);
-            panel1.Location = new Point(652, 66);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(931, 110);
+            panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(18, 15, 18, 15);
-            panel1.Size = new Size(373, 288);
+            panel1.Padding = new Padding(26, 25, 26, 25);
+            panel1.Size = new Size(533, 480);
             panel1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(182, 260);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 24);
-            button1.TabIndex = 6;
-            button1.Text = "Enter";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // loginButton
             // 
-            loginButton.Location = new Point(270, 260);
-            loginButton.Margin = new Padding(3, 2, 3, 2);
+            loginButton.Location = new Point(386, 433);
+            loginButton.Margin = new Padding(4, 3, 4, 3);
             loginButton.Name = "loginButton";
-            loginButton.Size = new Size(82, 24);
+            loginButton.Size = new Size(117, 40);
             loginButton.TabIndex = 5;
             loginButton.Text = "Login";
             loginButton.UseVisualStyleBackColor = true;
@@ -107,29 +96,31 @@
             // 
             idLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             idLabel.AutoSize = true;
-            idLabel.Location = new Point(0, 169);
+            idLabel.Location = new Point(0, 280);
+            idLabel.Margin = new Padding(4, 0, 4, 0);
             idLabel.Name = "idLabel";
-            idLabel.Size = new Size(73, 15);
+            idLabel.Size = new Size(113, 25);
             idLabel.TabIndex = 4;
             idLabel.Text = "Employee ID";
             // 
             // idBox
             // 
             idBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            idBox.Location = new Point(0, 188);
-            idBox.Margin = new Padding(3, 2, 3, 2);
+            idBox.Location = new Point(0, 311);
+            idBox.Margin = new Padding(4, 3, 4, 3);
             idBox.Name = "idBox";
             idBox.PlaceholderText = "Your company provided identification number";
-            idBox.Size = new Size(353, 23);
+            idBox.Size = new Size(499, 31);
             idBox.TabIndex = 3;
             // 
             // passwordLabel
             // 
             passwordLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new Point(0, 109);
+            passwordLabel.Location = new Point(0, 180);
+            passwordLabel.Margin = new Padding(4, 0, 4, 0);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new Size(57, 15);
+            passwordLabel.Size = new Size(87, 25);
             passwordLabel.TabIndex = 2;
             passwordLabel.Text = "Password";
             // 
@@ -137,19 +128,20 @@
             // 
             emailLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             emailLabel.AutoSize = true;
-            emailLabel.Location = new Point(0, 50);
+            emailLabel.Location = new Point(0, 81);
+            emailLabel.Margin = new Padding(4, 0, 4, 0);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new Size(37, 15);
+            emailLabel.Size = new Size(56, 25);
             emailLabel.TabIndex = 0;
             emailLabel.Text = "Login";
             // 
             // panel2
             // 
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(620, 0);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(886, 0);
+            panel2.Margin = new Padding(4, 3, 4, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(435, 478);
+            panel2.Size = new Size(621, 797);
             panel2.TabIndex = 4;
             // 
             // panel3
@@ -157,21 +149,24 @@
             panel3.BackColor = SystemColors.ControlDark;
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(4, 5, 4, 5);
             panel3.Name = "panel3";
-            panel3.Size = new Size(620, 478);
+            panel3.Size = new Size(886, 797);
             panel3.TabIndex = 5;
             // 
             // InitForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1055, 478);
+            ClientSize = new Size(1507, 797);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(panel2);
-            Margin = new Padding(3, 2, 3, 2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
             Name = "InitForm";
-            Text = "Form1";
+            Text = "Login screen";
+            FormClosed += InitForm_FormClosed;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

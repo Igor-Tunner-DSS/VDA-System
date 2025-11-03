@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using VDA_Core.Controller;
 using VDA_Core.Model.Entities;
 
@@ -92,10 +93,20 @@ namespace VDA_Application.View
         {
             if (MessageBox.Show("Are you sure you want to logout?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                AuthController.currentSession = new ();
+                AuthController.currentSession = new();
                 FormController.CreateForm(new InitForm());
                 this.Hide();
             }
+        }
+
+        private void Graphs_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

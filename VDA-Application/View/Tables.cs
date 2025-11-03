@@ -194,33 +194,38 @@ namespace VDA_Application.View
                     CustomersTab.Controls.Add(dataGridView1);
                     break;
                 case "CategoriesTab":
-                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    dataGridView1.DataSource = AuthController.tableValues.categories;
                     CategoriesTab.Controls.Clear();
                     CategoriesTab.Controls.Add(dataGridView1);
                     break;
                 case "ProductsTab":
-                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    dataGridView1.DataSource = AuthController.tableValues.products;
                     ProductsTab.Controls.Clear();
                     ProductsTab.Controls.Add(dataGridView1);
                     break;
                 case "PurchasesTab":
-                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    dataGridView1.DataSource = AuthController.tableValues.purchases;
                     PurchasesTab.Controls.Clear();
                     PurchasesTab.Controls.Add(dataGridView1);
                     break;
                 case "PurchaseItensTab":
-                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    dataGridView1.DataSource = AuthController.tableValues.purchaseItens;
                     PurchaseItensTab.Controls.Clear();
                     PurchaseItensTab.Controls.Add(dataGridView1);
                     break;
                 case "UsersTab":
-                    dataGridView1.DataSource = AuthController.tableValues.customers;
+                    dataGridView1.DataSource = AuthController.tableValues.users;
                     UsersTab.Controls.Clear();
                     UsersTab.Controls.Add(dataGridView1);
                     break;
                 default:
                     break;
             }
+        }
+
+        private void Tables_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

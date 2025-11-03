@@ -65,8 +65,8 @@ namespace VDA_Application
                     ForeColor = System.Drawing.Color.LightGray,
                     Font = new System.Drawing.Font("Segoe UI", 10F, FontStyle.Regular),
                     Dock = DockStyle.Top,
-                    Height = 30,
-                    TextAlign = ContentAlignment.MiddleLeft,
+                    Height = 40,
+                    TextAlign = ContentAlignment.TopLeft,
                     Padding = new Padding(10, 10, 0, 0)
                 };
 
@@ -124,7 +124,7 @@ namespace VDA_Application
             contentPanel.Controls.Add(dashboardLayout);
         }
 
-        
+
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -203,6 +203,11 @@ namespace VDA_Application
                 FormController.CreateForm(new InitForm());
                 this.Hide();
             }
+        }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

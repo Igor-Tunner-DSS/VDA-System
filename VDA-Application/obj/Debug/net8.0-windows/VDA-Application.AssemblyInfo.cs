@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VDA-Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f199b3f7a993d8461a756ca31e4cdb1bd0901ac8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44ac9ebf41db30096ff595a941a012bba737aa08")]
 [assembly: System.Reflection.AssemblyProductAttribute("VDA-Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VDA-Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
