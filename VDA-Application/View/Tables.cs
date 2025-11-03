@@ -30,11 +30,11 @@ namespace VDA_Application.View
         {
             InitializeValues();
             InitializeComponent();
+            dataGridView1.DataSource = AuthController.tableValues.employees;
         }
 
         private async void InitializeValues()
         {
-            _employees = await _db.GetTables<Employee>();
         }
 
         private void Tables_Load(object sender, EventArgs e)

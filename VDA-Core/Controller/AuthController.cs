@@ -12,6 +12,15 @@ namespace VDA_Core.Controller
     {
         private static readonly DatabaseContext _db = new DatabaseContext();
         public static (AppUser currentUser, Employee currentEmployee) currentSession = new();
+        public static (
+            List<Employee> employees,
+            List<AppUser> users,
+            List<Category> categories,
+            List<Customer> customers,
+            List<Product> products,
+            List<Purchase> purchases,
+            List<PurchaseItem> purchaseItens
+            ) tableValues = new();
 
         public static async Task<bool> ValidateCredentials(string login, string password, string id)
         {
@@ -55,6 +64,14 @@ namespace VDA_Core.Controller
                     {
                         currentSession.currentUser = user;
                         currentSession.currentEmployee = await _db.GetEmployee(user.id);
+
+                        tableValues.users = await _db.GetUsers();
+                        tableValues.employees = await _db.GetEmployees();
+                        tableValues.products = await _db.GetProducts();
+                        tableValues.purchases = await _db.GetPurchases();
+                        tableValues.purchaseItens = await _db.GetPurchaseItens();
+                        tableValues.categories = await _db.GetCategories();
+                        tableValues.customers = await _db.GetCustomers();
                         validUser = true;
                     }
                 }

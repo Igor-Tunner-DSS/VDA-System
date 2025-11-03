@@ -161,6 +161,52 @@ namespace VDA_Core.Model
             }
             return products;
         }
+        public async Task<List<Purchase>> GetPurchases()
+        {
+            List<Purchase> purchases = new();
+            await using var cmd = dataSource.CreateCommand("SELECT purchase_id, customer_id, employee_id, total_price, purchase_date, shipped_date, ship_address, ship_city, ship_country FROM purchases");
+            await using NpgsqlDataReader reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                Purchase purchase = new
+                (
+                    purchase_id: reader.GetInt16(0),
+                    customer_id: reader.GetInt16(1),
+                    employee_id: reader.GetInt16(2),
+                    total_price: reader.GetFloat(3),
+                    purchase_date: Extensions.FromDateTimeSafe(reader.GetValueSafe<DateTime>(4)),
+                    shipped_date: Extensions.FromDateTimeSafe(reader.GetValueSafe<DateTime>(5)),
+                    ship_address: reader.GetValueSafeRef<string>(6),
+                    ship_city: reader.GetValueSafeRef<string>(7),
+                    ship_country: reader.GetValueSafeRef<string>(8)
+                );
+                purchases.Add(purchase);
+            }
+            return purchases;
+        }
+
+        public async Task<List<PurchaseItem>> GetPurchaseItens()
+        {
+            List<PurchaseItem> purchases = new();
+            await using var cmd = dataSource.CreateCommand("SELECT purchase_id, product_id, quantity, unit_price FROM purchase_itens");
+            await using NpgsqlDataReader reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                PurchaseItem purchase = new
+                (
+                    purchase_id: reader.GetInt16(0),
+                    product_id: reader.GetInt16(1),
+                    quantity: reader.GetInt16(2),
+                    unit_price: reader.GetFloat(3)
+                );
+                purchases.Add(purchase);
+            }
+            return purchases;
+        }
+
+        
+
+
 
         public async Task<Employee?> GetEmployee(int id)
         {
